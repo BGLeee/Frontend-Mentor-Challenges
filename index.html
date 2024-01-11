@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Calculator app</title>
 
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-<div class="main">
-  <div class="titleArea">
-      <h4>calc</h4> 
+  <div class="main">
+    <div class="titleArea">
+      <h4>calc</h4>
       <div class="toggler">
         <p>THEME</p>
         <div class="toggledetail">
@@ -21,52 +24,92 @@
             <h6>1</h6>
             <h6>2</h6>
             <h6>3</h6>
-          
+
           </div>
-            <div class="toggleArea">
-            <div class="ball">
+          <div class="toggleArea">
+            <div class="firstBall"></div>
+            <div class="secondBall"></div>
+            <div class="thirdBall"></div>
+            <div class="mainBall">
 
             </div>
           </div>
         </div>
       </div>
-    
+
+    </div>
+
+    <div class="display">
+      <h1>0</h1>
+    </div>
+    <div class="keypad">
+      <div id="seven" class="key seven">
+        <h3>7</h3>
+      </div>
+      <div id="eight" class="key eight">
+        <h3>8</h3>
+      </div>
+      <div id="nine" class="key nine">
+        <h3>9</h3>
+      </div>
+      <div id="delete" class="key delete colorChanger">
+        <h3>DEL</h3>
+      </div>
+      <div id="four" class="key four">
+        <h3>4</h3>
+      </div>
+      <div id="five" class="key five">
+        <h3>5</h3>
+      </div>
+      <div id="six" class="key six">
+        <h3>6</h3>
+      </div>
+      <div id="plus" class="key plus">
+        <h3>+</h3>
+      </div>
+      <div id="one" class="key one">
+        <h3>1</h3>
+      </div>
+      <div id="two" class="key two">
+        <h3>2</h3>
+      </div>
+      <div id="three" class="key three">
+        <h3>3</h3>
+      </div>
+      <div id="minus" class="key minus">
+        <h3>-</h3>
+      </div>
+      <div id="dot" class="key dot">
+        <h3>.</h3>
+      </div>
+      <div id="zero" class="key zero">
+        <h3>0</h3>
+      </div>
+      <div id="slash" class="key slash">
+        <h3>/</h3>
+      </div>
+      <div id="multiple" class="key multiple">
+        <h3>x</h3>
+      </div>
+      <div id="reset" class="key reset colorChanger">
+        <h3></h3>RESET
+      </div>
+      <div id="equal" class="key equal">
+        <h3>=</h3>
+      </div>
+    </div>
   </div>
-  
-  <div class="display">
-    <h1>0</h1>
-  </div>
-  <div class="keypad">
-    <div id="seven" class="key seven"><h3>7</h3></div>
-    <div id="eight" class="key eight"><h3>8</h3></div>
-    <div id="nine" class="key nine"><h3>9</h3></div>
-    <div id="delete" class="key delete colorChanger"><h3>DEL</h3></div>
-    <div id="four" class="key four"><h3>4</h3></div>
-    <div id="five" class="key five"><h3>5</h3></div>
-    <div id="six" class="key six"><h3>6</h3></div>
-    <div id="plus" class="key plus"><h3>+</h3></div>
-    <div id="one" class="key one"><h3>1</h3></div>
-    <div id="two" class="key two"><h3>2</h3></div>
-    <div id="three" class="key three"><h3>3</h3></div>
-    <div id="minus" class="key minus"><h3>-</h3></div>
-    <div id="dot" class="key dot"><h3>.</h3></div>
-    <div id="zero" class="key zero"><h3>0</h3></div>
-    <div id="slash" class="key slash"><h3>/</h3></div>
-    <div id="multiple" class="key multiple"><h3>x</h3></div>
-    <div id="reset" class="key reset colorChanger"><h3></h3>RESET</div>
-    <div id="equal" class="key equal"><h3>=</h3></div>
-  </div>
-</div>
 
 
 
 
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Brook G</a>.
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="./index.js"></script>
 </body>
+
 </html>

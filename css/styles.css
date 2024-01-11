@@ -1,321 +1,337 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center;
-    color: white;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
 }
 .attribution a {
-     color: hsl(227, 23%, 67%); }
+  color: hsl(227, 23%, 67%);
+}
 
 :root {
+  --very-dark-Theme1-main-background: hsl(222, 26%, 31%);
+  --very-dark-Theme1-keypad-background: hsl(223, 31%, 20%);
+  --very-dark-Theme1-screen-background: hsl(224, 36%, 15%);
+  --dark-blue-Theme1-key-background: hsl(225, 21%, 49%);
+  --dark-blue-Theme1-key-shadow: hsl(224, 28%, 35%);
+  --red-key-Theme1-background-toggle: hsl(6, 63%, 50%);
+  --dark-red-Theme1-key-shadow: hsl(6, 70%, 34%);
+  --light-grayish-orange-Theme1-key-background: hsl(30, 25%, 89%);
+  --grayish-orange-Theme1-key-shadow: hsl(28, 16%, 65%);
+  --very-dark-Theme1-grayish-blue: hsl(221, 14%, 31%);
+  --white-Theme1: hsl(0, 0%, 100%);
+  --Light-gray-Theme2-main-background: hsl(0, 0%, 90%);
+  --very-light-Theme2-gray-screen-background: hsl(0, 0%, 93%);
+  --dark-moderate-cyan-Theme2-key-background: hsl(185, 42%, 37%);
+  --very-dark-cyan--Theme2-key-shadow: hsl(185, 58%, 25%);
+  --orange-Theme2-key-background-toggle: hsl(25, 98%, 40%);
+  --dark-orange-Theme2-key-shadow: hsl(25, 99%, 27%);
+  --light-grayish-yellow-Theme2-key-background: hsl(45, 7%, 89%);
+  --dark-grayish-orange-Theme2-key-shadow: hsl(35, 11%, 61%);
+  --very-dark-grayish-yellow-Theme2-text: hsl(60, 10%, 19%);
+  --white-text: hsl(0, 0%, 100%);
+  --very-dark-violet-Theme3-main-background: hsl(268, 75%, 9%);
 
-    --very-dark-Theme1-main-background: hsl(222, 26%, 31%);
-    --very-dark-Theme1-keypad-background: hsl(223, 31%, 20%);
-    --very-dark-Theme1-screen-background: hsl(224, 36%, 15%);
-    --dark-blue-Theme1-key-background: hsl(225, 21%, 49%);
-    --dark-blue-Theme1-key-shadow: hsl(224, 28%, 35%);
-    --red-key-Theme1-background-toggle: hsl(6, 63%, 50%);
-    --dark-red-Theme1-key-shadow: hsl(6, 70%, 34%);
-    --light-grayish-orange-Theme1-key-background: hsl(30, 25%, 89%);
-    --grayish-orange-Theme1-key-shadow: hsl(28, 16%, 65%);
-    --very-dark-Theme1-grayish-blue: hsl(221, 14%, 31%);
-    --white-Theme1: hsl(0, 0%, 100%);
-    --Light-gray-Theme2-main-background: hsl(0, 0%, 90%);
-    --very-light-Theme2-gray-screen-background: hsl(0, 0%, 93%);
-    --dark-moderate-cyan-Theme2-key-background: hsl(185, 42%, 37%);
-    --very-dark-cyan--Theme2-key-shadow: hsl(185, 58%, 25%);
-    --orange-Theme2-key-background-toggle: hsl(25, 98%, 40%);
-    --dark-orange-Theme2-key-shadow: hsl(25, 99%, 27%);
-    --light-grayish-yellow-Theme2-key-background: hsl(45, 7%, 89%);
-    --dark-grayish-orange-Theme2-key-shadow: hsl(35, 11%, 61%);
-    --very-dark-grayish-yellow-Theme2-text: hsl(60, 10%, 19%);
-    --white-text: hsl(0, 0%, 100%);
-    --very-dark-violet-Theme3-main-background: hsl(268, 75%, 9%);
-    
-    --very-dark-violet-Theme3-toggle-keypad-and-screen-background: hsl(268, 71%, 12%);
-    --dark-violet-Theme3-key-background: hsl(281, 89%, 26%);
-    --vivid-magenta-Theme3-key-shadow:  hsl(285, 91%, 52%);
-    --pure-cyan-Theme3-key-toggle-background: hsl(176, 100%, 44%);
-    --soft-cyan-Theme3-key-shadow: hsl(177, 92%, 70%);
-    --very-dark-violet-Theme3-key-background: hsl(268, 47%, 21%);
-    --dark-magenta-Theme3-key-shadow: hsl(290, 70%, 36%);
-    --light-yellow-Theme3-text: hsl(52, 100%, 62%);
-    --very-dark-blue-Theme3-text: hsl(198, 20%, 13%);
-    --white-Theme3-text: hsl(0, 0%, 100%);
+  --very-dark-violet-Theme3-toggle-keypad-and-screen-background: hsl(
+    268,
+    71%,
+    12%
+  );
+  --dark-violet-Theme3-key-background: hsl(281, 89%, 26%);
+  --vivid-magenta-Theme3-key-shadow: hsl(285, 91%, 52%);
+  --pure-cyan-Theme3-key-toggle-background: hsl(176, 100%, 44%);
+  --soft-cyan-Theme3-key-shadow: hsl(177, 92%, 70%);
+  --very-dark-violet-Theme3-key-background: hsl(268, 47%, 21%);
+  --dark-magenta-Theme3-key-shadow: hsl(290, 70%, 36%);
+  --light-yellow-Theme3-text: hsl(52, 100%, 62%);
+  --very-dark-blue-Theme3-text: hsl(198, 20%, 13%);
+  --white-Theme3-text: hsl(0, 0%, 100%);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: var(--very-dark-Theme1-main-background);
-    display: flex;
-    /* margin: 3rem; */
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh);
-    font-family: 'League Spartan', sans-serif;
-    
+body {
+  background-color: var(--very-dark-Theme1-main-background);
+  display: flex;
+  /* margin: 3rem; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh);
+  font-family: "League Spartan", sans-serif;
 }
 
 /*Theme 1*/
-body.theme1{
-    background-color: hsl(222, 26%, 31%);
+body.theme1 {
+  background-color: hsl(222, 26%, 31%);
 }
-.keypadAreaTheme1{
-    background-color: #D0CDCE !important;
-    color: var(--dark-blue-Theme1-key-background);
-}
-
-.displayAreaTheme1{
-    color: white !important;
-}
-.keyAreaTheme1{
-    border-bottom: 0.25rem solid #B2A195;
-
-}
-.keyAreaTheme1:hover{
-    background-color:  white;
-    border: 0px;
-
-}
-.colorChangerAreaTheme1{
-    border-bottom: 0.25rem solid #414E71;
-
+.keypadAreaTheme1 {
+  background-color: #d0cdce !important;
+  color: var(--dark-blue-Theme1-key-background);
 }
 
-.equalAreaTheme1{
-    border-bottom: 0.25rem solid #8F2316;
+.displayAreaTheme1 {
+  color: white !important;
+}
+.keyAreaTheme1 {
+  border-bottom: 0.25rem solid #b2a195;
+}
+.keyAreaTheme1:hover {
+  background-color: white;
+  border: 0px;
+}
+.colorChangerAreaTheme1 {
+  border-bottom: 0.25rem solid #414e71;
+}
+
+.equalAreaTheme1 {
+  border-bottom: 0.25rem solid #8f2316;
 }
 
 /*Theme 2*/
-body.theme2{
-    background-color: #E6E6E6;
-    
+body.theme2 {
+  background-color: #e6e6e6;
 }
-.titleAreaTheme2{
-    color: black !important;
+.titleAreaTheme2 {
+  color: black !important;
 }
-.toggleAreaTheme2{
-    background-color: #D0CDCE !important;
+.toggleAreaTheme2 {
+  background-color: #d0cdce !important;
 }
-.displayAreaTheme2{
-    background-color: white !important;
-    color: black !important;
+.displayAreaTheme2 {
+  background-color: white !important;
+  color: black !important;
 }
-.keypadAreaTheme2{
-    background-color: #D0CDCE !important;
-    color: black !important;
+.keypadAreaTheme2 {
+  background-color: #d0cdce !important;
+  color: black !important;
 }
-.keyAreaTheme2{
-    border-bottom: 0.25rem solid #A79E90;
-
+.keyAreaTheme2 {
+  border-bottom: 0.25rem solid #a79e90;
 }
-.colorChangerAreaTheme2{
-    background-color: #388187 !important;
-    border-bottom: 0.25rem solid #1C6167;
-
+.colorChangerAreaTheme2 {
+  background-color: #388187 !important;
+  border-bottom: 0.25rem solid #1c6167;
 }
-.colorChangerAreaTheme2:hover{
-    background-color: #62B5BD !important;
-
+.colorChangerAreaTheme2:hover {
+  background-color: #62b5bd !important;
 }
-.equalAreaTheme2{
-    background-color: #C85401 !important;
-    border-bottom: 0.25rem solid #863700;
+.equalAreaTheme2 {
+  background-color: #c85401 !important;
+  border-bottom: 0.25rem solid #863700;
 }
-.equalAreaTheme2:hover{
-    background-color: #FF8B38 !important;
+.equalAreaTheme2:hover {
+  background-color: #ff8b38 !important;
 }
-.attributionAreaTheme2{
-    color: black !important;
+.attributionAreaTheme2 {
+  color: black !important;
 }
 
 /*Theme 3*/
-body.theme3{
-    background-color:  hsl(268, 75%, 9%);
+body.theme3 {
+  background-color: hsl(268, 75%, 9%);
 }
-.titleAreaTheme3{
-    color: yellow !important;
+.titleAreaTheme3 {
+  color: yellow !important;
 }
-.toggleAreaTheme3{
-    background-color: #1E0837  !important;
+.toggleAreaTheme3 {
+  background-color: #1e0837 !important;
 }
-.ballAreaTheme3{
-    background-color: #00DECF !important;
+.ballAreaTheme3 {
+  background-color: #00decf !important;
 }
-.displayAreaTheme3{
-    background-color: #1E0836 !important;
-    color: white !important;
+.displayAreaTheme3 {
+  background-color: #1e0836 !important;
+  color: white !important;
 }
-.keypadAreaTheme3{
-    background-color: #1E0837 !important;
-    color: yellow !important;
-}
-
-
-.keyAreaTheme3{
-    background-color: #331B4D !important;
-    border-bottom: 0.25rem solid #851C9C;
-}
-.keyAreaTheme:hover{
-    background-color: #6B34AC !important;
-}
-.colorChangerAreaTheme3{
-    background-color: #56077C !important;
-    border-bottom: 0.25rem solid #BF16F5;
-
-}
-.colorChangerAreaTheme3:hover{
-    background-color: #56077C !important;
-
-}
-.equalAreaTheme3{
-    background-color: #00DECF !important;
-    border-bottom: 0.25rem solid #5EFFF5;
+.keypadAreaTheme3 {
+  background-color: #1e0837 !important;
+  color: yellow !important;
 }
 
-
-.main{
-    display: grid;
-    gap: 1rem; 
-    max-width: 600px;
-    margin-bottom: 2rem;
-
+.keyAreaTheme3 {
+  background-color: #331b4d !important;
+  border-bottom: 0.25rem solid #851c9c;
 }
-.titleArea{
-    display: flex;
-    justify-content: space-between;
-    align-items:end;
-    align-items: center; 
-    font-size: large;
-    color: white;
+.keyAreaTheme:hover {
+  background-color: #6b34ac !important;
 }
-
-.display{
-    background-color: var(--very-dark-Theme1-screen-background);
-    color: white;
-    display: flex;
-    justify-content: end;
-    padding: 1.5rem;
+.colorChangerAreaTheme3 {
+  background-color: #56077c !important;
+  border-bottom: 0.25rem solid #bf16f5;
+}
+.colorChangerAreaTheme3:hover {
+  background-color: #56077c !important;
+}
+.equalAreaTheme3 {
+  background-color: #00decf !important;
+  border-bottom: 0.25rem solid #5efff5;
 }
 
-.toggler{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    font-size:x-small ; 
-
+.main {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+.titleArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  align-items: center;
+  font-size: large;
+  color: white;
 }
 
-.toggler p{
-    font-size: 8px;
-    letter-spacing: 1px;
+.display {
+  background-color: var(--very-dark-Theme1-screen-background);
+  color: white;
+  display: flex;
+  justify-content: end;
+  padding: 1.5rem;
 }
 
-.toggleArea{ 
-    width: 3rem;     
-    height: 1.3rem; 
-    background-color: var(--very-dark-Theme1-keypad-background);
-    display: inline-flex;
-    align-items: center;
-    border-radius: 20px;
-    padding: 3px;
+.toggler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: x-small;
 }
 
-.toggledetail{
- /* display: flex;  */
-    /* flex-direction: column; */
-    
-    margin-left: 1rem;  
+.toggler p {
+  font-size: 8px;
+  letter-spacing: 1px;
 }
 
-
-.themeNumbers{
-    display: flex; 
-    justify-content: space-around; 
-    margin-bottom: 4px;
-    
-
-}
-.themeNumbers h6{
-    font-size:smaller;
-    font-weight: 100 !important;
+.toggleArea {
+  width: 3rem;
+  height: 1.3rem;
+  background-color: var(--very-dark-Theme1-keypad-background);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;
+  padding: 3px;
+  cursor: pointer;
 }
 
+.toggledetail {
+  /* display: flex;  */
+  /* flex-direction: column; */
 
-.ball{
-    display: inline-flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 13px; 
-    height: 13px;   
-    border-radius: 50%;
-    background-color: var(--red-key-Theme1-background-toggle); 
-
-    /* margin: 5rem; */
-}
-.display{
-    display: flex; 
-
+  margin-left: 1rem;
 }
 
-.keypad{
-    background-color: var(--very-dark-Theme1-keypad-background); 
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1rem; 
-    padding: 1rem; 
-
+.themeNumbers {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4px;
+  height: 100%;
+}
+.themeNumbers h6 {
+  font-size: smaller;
+  font-weight: 100 !important;
 }
 
-.key{
-    background-color: var(--white-Theme3-text); 
-    /* padding: 0.7rem 1rem; */
-    display: inline-flex; 
-    justify-content: center; 
-    padding: 10px 1rem ;
-    align-items: center; 
-    cursor: pointer; 
+.firstBall {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.secondBall {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.thirdBall {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.mainBall {
+  display: inline-flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--red-key-Theme1-background-toggle);
+
+  /* margin: 5rem; */
+}
+.display {
+  display: flex;
 }
 
-.reset{
-grid-column: 1/3; 
-background-color: var(--dark-blue-Theme1-key-background);
-color: white;
+.keypad {
+  background-color: var(--very-dark-Theme1-keypad-background);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
 }
 
-.key:hover{ 
-    
-background-color: --;
+.key {
+  background-color: var(--white-Theme3-text);
+  /* padding: 0.7rem 1rem; */
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px 1rem;
+  align-items: center;
+  cursor: pointer;
 }
-.equal{
-    grid-column: 3/5; 
-    background-color: var(--red-key-Theme1-background-toggle);
-    color: white;
+
+.reset {
+  grid-column: 1/3;
+  background-color: var(--dark-blue-Theme1-key-background);
+  color: white;
 }
-.equal:hover{
-    background-color: hsl(6, 71%, 67%);
+
+.key:hover {
+  background-color: --;
 }
-.delete{
-    background-color: var(--dark-blue-Theme1-key-background);
-    color: white; 
+.equal {
+  grid-column: 3/5;
+  background-color: var(--red-key-Theme1-background-toggle);
+  color: white;
 }
-.delete:hover,.reset:hover {
-    background-color:  hsl(225, 21%, 49%);
+.equal:hover {
+  background-color: hsl(6, 71%, 67%);
 }
-div{
-    border-radius: .3rem;  
+.delete {
+  background-color: var(--dark-blue-Theme1-key-background);
+  color: white;
+}
+.delete:hover,
+.reset:hover {
+  background-color: hsl(225, 21%, 49%);
+}
+div {
+  border-radius: 0.3rem;
 }
 .pressed {
-    box-shadow: 0 0 20px white;
-    background-color: grey;
+  box-shadow: 0 0 20px white;
+  background-color: grey;
 }
